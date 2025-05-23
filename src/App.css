@@ -34,8 +34,33 @@ body {
     text-transform: uppercase;
     cursor: pointer;
   }
+  .btnNav {
+    position: relative;
+  }
+  .shopNav {
+    position: absolute;
+    top: 100%; /* place right below the button */
+    right: 0;
+    background: #fff;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    font-family: inherit;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .ulNav {
   display: flex;
   justify-content: space-around;

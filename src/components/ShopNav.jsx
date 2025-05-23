@@ -5,8 +5,8 @@ const ShopNav = () => {
     <ul className="shopNav">
       {shop_nav_items.map((item) => {
         return (
-          <a link={link.item}>
-            <li id={item.id}>{item.text}</li>
+          <a href={item.link} id={item.id}>
+            <li>{item.text}</li>
           </a>
         );
       })}
