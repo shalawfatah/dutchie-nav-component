@@ -1,0 +1,13 @@
+import { main_nav_items } from "../utils/main_nav_items";
+
+const MainNav = () => {
+  return (
+    <ul className="ulNav mainNav">
+      {main_nav_items.map((item) => {
+        return <li id={item.id}>{item.text}</li>;
+      })}
+    </ul>
+  );
+};
+
+export default MainNav;
