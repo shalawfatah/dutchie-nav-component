@@ -10,7 +10,7 @@ const CatNav = () => {
             href={`/stores/${store}/products${item.link}`}
             id={item.id}
           >
-            <li id={item.id}>{item.text}</li>
+            <li>{item.text}</li>
           </a>
         );
       })}

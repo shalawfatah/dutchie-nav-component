@@ -4,7 +4,11 @@ const MainNav = () => {
   return (
     <ul className="ulNav mainNav">
       {main_nav_items.map((item) => {
-        return <li id={item.id}>{item.text}</li>;
+        return (
+          <a href={item.link} id={item.id}>
+            <li>{item.text}</li>
+          </a>
+        );
       })}
     </ul>
   );
